@@ -14,8 +14,8 @@ public class CharGrouperController {
 	private CharGrouper charGrouper;
 	
 	@GetMapping("/chargrouper/{ungroupedStr}")
-	public String groupStr(@PathVariable String ungroupedStr) {
-		return charGrouper.group(ungroupedStr);
+	public GroupedStrResponse groupStr(@PathVariable String ungroupedStr) {
+		return new GroupedStrResponse(charGrouper.group(ungroupedStr));
 	}
 
 }
