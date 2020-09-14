@@ -34,7 +34,7 @@ public class ArraySorterTest {
 	public void testSort() {
 		int[] sorted = arraySorter.sort(unsortedArray);
 		for (int i = 0; i < sorted.length - 1; i++) {
-			assertTrue("numbers where not sorted correctly!",sorted[i] <= sorted[i + 1]);
+			assertTrue("numbers were not sorted correctly!",sorted[i] <= sorted[i + 1]);
 		}
 	}
 
